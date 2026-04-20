@@ -1,0 +1,261 @@
+/* 🌍 GLOBAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* 🌑 DARK PREMIUM BACKGROUND */
+body {
+    background: linear-gradient(180deg, #0b1220, #111a2e);
+    color: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* 🧭 GLASS DARK NAVBAR */
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00d9ff;
+}
+
+/* LINKS */
+nav a {
+    margin-left: 18px;
+    text-decoration: none;
+    color: #cbd5e1;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00d9ff;
+}
+
+nav a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #00d9ff;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* 🌟 HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #00d9ff;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #cbd5e1;
+}
+
+/* 📦 CARDS */
+.features,
+.team-grid,
+.quiz-container,
+.logic-section,
+.flow {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+/* ⭐ CENTER TEAM SECTION SPECIAL FIX */
+.team-grid {
+    align-items: center;
+}
+
+/* CARDS */
+.card,
+.quiz-card,
+.logic-card,
+.box {
+    background: #1e293b;
+    padding: 20px;
+    width: 260px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.card:hover,
+.quiz-card:hover,
+.logic-card:hover,
+.box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.7);
+}
+
+/* 🌬️ FLOW */
+.flow {
+    align-items: center;
+}
+
+.arrow {
+    font-size: 22px;
+    color: #00d9ff;
+}
+
+/* 🧪 SIMULATION */
+.sim-box {
+    text-align: center;
+    padding: 40px;
+}
+
+.sim-box input {
+    width: 60%;
+    margin: 20px 0;
+}
+
+/* 🔋 METER */
+.meter {
+    width: 60%;
+    height: 25px;
+    background: #334155;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(to right, #00d9ff, #38bdf8);
+    transition: 0.3s;
+}
+
+/* 🎯 BUTTONS */
+.quiz-card button,
+.qbtn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 8px;
+    background: #00d9ff;
+    color: #0b1220;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.quiz-card button:hover,
+.qbtn:hover {
+    background: #38bdf8;
+}
+
+/* 🔻 FOOTER */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f172a;
+    margin-top: 40px;
+    color: #94a3b8;
+}/* 🌟 PAGE FADE IN ANIMATION */
+body {
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}/* 🌬️ FLOATING WIND EFFECT */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0,217,255,0.08) 10%, transparent 10.01%);
+    background-size: 60px 60px;
+    animation: moveWind 20s linear infinite;
+    z-index: -1;
+}
+
+@keyframes moveWind {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(-100px, -100px);
+    }
+}.quiz-container {
+    text-align: center;
+    padding: 40px;
+}
+
+.quiz-card {
+    background: #1e293b;
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.quiz-card button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    border: none;
+    border-radius: 8px;
+    background: #00d9ff;
+    cursor: pointer;
+}
+
+.reset-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}

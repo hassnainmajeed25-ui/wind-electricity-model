@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulation - Wind Electricity Model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🧭 NAVIGATION -->
+<header>
+    <div class="logo">🧪 Simulation</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="wind.html">Wind Energy</a>
+        <a href="circuit.html">Circuit</a>
+        <a href="simulation.html">Simulation</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<!-- 🧪 MAIN SECTION -->
+<section class="hero">
+
+    <h1>Wind Energy Simulation</h1>
+
+    <p>
+        This simulation demonstrates how wind speed affects electricity generation.
+        As wind speed increases, electricity output also increases.
+    </p>
+
+</section>
+
+<!-- 🎚️ SIMULATION BOX -->
+<section class="sim-box">
+
+    <h2>Wind Speed Control</h2>
+
+    <input type="range" min="0" max="100" value="50" id="windSlider">
+
+    <p>Wind Speed: <span id="windValue">50</span>%</p>
+
+    <div class="meter">
+
+        <div class="bar" id="powerBar"></div>
+
+    </div>
+
+    <p>Electricity Output Level</p>
+
+</section>
+
+<!-- 🔻 FOOTER -->
+<footer class="footer">
+    <p>Wind Electricity Model © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

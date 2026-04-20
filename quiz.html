@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz - Wind Electricity Model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🎯 Quiz Zone</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="wind.html">Wind Energy</a>
+        <a href="circuit.html">Circuit</a>
+        <a href="simulation.html">Simulation</a>
+        <a href="logic.html">Logic</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Wind Energy Quiz</h1>
+    <p>Test your knowledge ⚡</p>
+</section>
+
+<!-- 🎯 QUIZ BOX -->
+<section class="quiz-container">
+
+    <div class="quiz-card">
+        <h3>1. Wind energy is a type of?</h3>
+        <button onclick="answer(true)">Renewable Energy</button>
+        <button onclick="answer(false)">Non Renewable Energy</button>
+    </div>
+
+    <div class="quiz-card">
+        <h3>2. Wind turbine converts wind into?</h3>
+        <button onclick="answer(true)">Mechanical Energy</button>
+        <button onclick="answer(false)">Heat Energy</button>
+    </div>
+
+    <div class="quiz-card">
+        <h3>3. Final output of wind system is?</h3>
+        <button onclick="answer(true)">Electricity</button>
+        <button onclick="answer(false)">Smoke</button>
+    </div>
+
+    <h2 id="score">Score: 0</h2>
+
+    <button class="reset-btn" onclick="resetQuiz()">Reset Quiz</button>
+
+</section>
+
+<footer class="footer">
+    <p>Wind Electricity Model © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
